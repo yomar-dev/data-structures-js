@@ -45,5 +45,4 @@ queue.enqueue('an');
 queue.enqueue('example');
 console.log('Is empty: ', queue.isEmpty());
 console.log('First Value: ', queue.peek());
-queue.
 queue.print();
