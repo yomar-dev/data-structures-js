@@ -32,8 +32,8 @@ class Queue {
   }
 
   print() {
-    for (const item of this.items) {
-      console.log(item);
+    for (let i = this.front; i < this.end; i++) {
+      console.log(this.items[i]);      
     }
   }
 }
@@ -43,6 +43,8 @@ queue.enqueue('This');
 queue.enqueue('is');
 queue.enqueue('an');
 queue.enqueue('example');
+// queue.dequeue();
+// queue.dequeue();
 console.log('Is empty: ', queue.isEmpty());
 console.log('First Value: ', queue.peek());
 queue.print();
